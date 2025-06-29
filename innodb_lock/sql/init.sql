@@ -1,3 +1,5 @@
+drop database if exists innodb_lock;
+
 create database if not exists innodb_lock;
 
 use innodb_lock;
@@ -17,3 +19,7 @@ INSERT INTO stu (id, name, age) VALUES (8, 'python', 20);
 INSERT INTO stu (id, name, age) VALUES (9, 'swift', 20);
 INSERT INTO stu (id, name, age) VALUES (13, 'c++', 50);
 INSERT INTO stu (id, name, age) VALUES (20, 'c', 60);
+INSERT INTO stu (id, name, age) VALUES (25, 'c#', 60);
+INSERT INTO stu (id, name, age) VALUES (30, 'F#', 70);
+INSERT INTO stu (id, name, age) VALUES (35, 'vb', 70);
+INSERT INTO stu (id, name, age) VALUES (40, 'golang', 80);

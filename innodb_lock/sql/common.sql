@@ -4,4 +4,8 @@ from performance_schema.data_locks;
 
 -- 查看表级别锁情况
 SELECT *
-FROM performance_schema.metadata_locks where OBJECT_TYPE='TABLE'
+FROM performance_schema.metadata_locks where OBJECT_TYPE='TABLE';
+
+
+use innodb_lock;
+select * from stu;
