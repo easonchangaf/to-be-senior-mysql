@@ -1,0 +1,12 @@
+CREATE TABLE stu (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    code INT UNIQUE NOT NULL,
+    name VARCHAR(64) NOT NULL,
+    age TINYINT UNSIGNED,
+    phone VARCHAR(20),
+    description TEXT,
+    created_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    INDEX idx_code (code),
+    INDEX idx_age (age)
+);
